@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node ./bin/www",
-    "start:dev": "DEBUG=myapp:* nodemon ./bin/www"
+    "start:dev": "DEBUG=myapp:* NODE_ENV=dev nodemon ./bin/www"
   },
   "dependencies": {
     "bluebird": "^3.4.1",

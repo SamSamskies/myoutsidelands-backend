@@ -1,5 +1,7 @@
 // init process.env
-require('dotenv').config();
+if (process.env.NODE_ENV === 'dev') {
+  require('dotenv').config();
+}
 
 var express = require('express');
 var path = require('path');
