@@ -1,3 +1,6 @@
+// init process.env
+require('dotenv').config();
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,9 +12,6 @@ var routes = require('./routes/index');
 var schedule = require('./routes/schedule');
 
 var app = express();
-
-// init process.env
-require('dotenv').config();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
