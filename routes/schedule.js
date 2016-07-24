@@ -39,14 +39,14 @@ router.get('/auth-callback', function(req, res, next) {
       const cachedSchedule = cache.get(email);
 
       if (cachedSchedule) {
-        res.json(_.reject(cachedSchedule, (timeSlot) => timeSlot.tag === null));
+        res.json(cachedSchedule);
       } else {
         createNewSchedule(spotifyApi, email)
           .then((scheduleWithTags) => {
             cache.set(email, scheduleWithTags);
             return scheduleWithTags;
           })
-          .then((scheduleWithTags) => res.json(_.reject(scheduleWithTags, (timeSlot) => timeSlot.tag === null)))
+          .then((scheduleWithTags) => res.json(scheduleWithTags));
       }
     })
     .catch((err) => res.json(err))
