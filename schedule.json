@@ -1,0 +1,938 @@
+[
+  {
+    "name": "lany",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1245",
+      "end": "1335"
+    }
+  },
+  {
+    "name": "ra ra riot",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1405",
+      "end": "1455"
+    }
+  },
+  {
+    "name": "st. lucia",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1525",
+      "end": "1615"
+    }
+  },
+  {
+    "name": "miike snow",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1645",
+      "end": "1745"
+    }
+  },
+  {
+    "name": "duran duran",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1815",
+      "end": "1925"
+    }
+  },
+  {
+    "name": "lcd soundsystem",
+    "stage": "Lands End",
+    "day": "2016-08-05",
+    "time": {
+      "start": "2010",
+      "end": "2155"
+    }
+  },
+  {
+    "name": "whitney",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1200",
+      "end": "1245"
+    }
+  },
+  {
+    "name": "caveman",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1315",
+      "end": "1400"
+    }
+  },
+  {
+    "name": "wet",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1430",
+      "end": "1520"
+    }
+  },
+  {
+    "name": "foals",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1550",
+      "end": "1640"
+    }
+  },
+  {
+    "name": "the claypool lennon delirium",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1710",
+      "end": "1800"
+    }
+  },
+  {
+    "name": "nathaniel rateliff & the night sweats",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1830",
+      "end": "1920"
+    }
+  },
+  {
+    "name": "beach house",
+    "stage": "Sutro",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1950",
+      "end": "2100"
+    }
+  },
+  {
+    "name": "marian hill",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1245",
+      "end": "1330"
+    }
+  },
+  {
+    "name": "jidenna",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1410",
+      "end": "1455"
+    }
+  },
+  {
+    "name": "poliça",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1540",
+      "end": "1630"
+    }
+  },
+  {
+    "name": "thomas jack",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1715",
+      "end": "1805"
+    }
+  },
+  {
+    "name": "grimes",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1850",
+      "end": "1950"
+    }
+  },
+  {
+    "name": "j. cole",
+    "stage": "Twin Peaks",
+    "day": "2016-08-05",
+    "time": {
+      "start": "2040",
+      "end": "2155"
+    }
+  },
+  {
+    "name": "down and outlaws",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1200",
+      "end": "1240"
+    }
+  },
+  {
+    "name": "moon taxi",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1330",
+      "end": "1410"
+    }
+  },
+  {
+    "name": "vulfpeck",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1455",
+      "end": "1535"
+    }
+  },
+  {
+    "name": "tokimonsta",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1630",
+      "end": "1710"
+    }
+  },
+  {
+    "name": "låpsley",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1805",
+      "end": "1845"
+    }
+  },
+  {
+    "name": "hiatus kaiyote",
+    "stage": "Panhandle",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1950",
+      "end": "2035"
+    }
+  },
+  {
+    "name": "make it funky djs",
+    "stage": "The House by Heineken",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1200",
+      "end": "1330"
+    }
+  },
+  {
+    "name": "219 boys",
+    "stage": "The House by Heineken",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1330",
+      "end": "1500"
+    }
+  },
+  {
+    "name": "fdvm",
+    "stage": "The House by Heineken",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1500",
+      "end": "1630"
+    }
+  },
+  {
+    "name": "redlight",
+    "stage": "The House by Heineken",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1630",
+      "end": "1800"
+    }
+  },
+  {
+    "name": "pillowtalk",
+    "stage": "The House by Heineken",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1800",
+      "end": "2000"
+    }
+  },
+  {
+    "name": "the romane event with paco romane & friends : featuring moshe kasher, josef anolin, josh androsky, kaseem bentley, clare o'kane, spencer devine, david gborie, krista fatka, david roth, jane harrison, and casey ley",
+    "stage": "The Barbary",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1320",
+      "end": "1430"
+    }
+  },
+  {
+    "name": "hound tall discussion series with moshe kasher",
+    "stage": "The Barbary",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1500",
+      "end": "1550"
+    }
+  },
+  {
+    "name": "natasha leggero, john early, and jermaine fowler",
+    "stage": "The Barbary",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1620",
+      "end": "1705"
+    }
+  },
+  {
+    "name": "john mulaney & beth stelling",
+    "stage": "The Barbary",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1735",
+      "end": "1825"
+    }
+  },
+  {
+    "name": "anthony jeselnik, kyle kinane and claudia o'doherty",
+    "stage": "The Barbary",
+    "day": "2016-08-05",
+    "time": {
+      "start": "1845",
+      "end": "1950"
+    }
+  },
+  {
+    "name": "lewis del mar",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1245",
+      "end": "1330"
+    }
+  },
+  {
+    "name": "the wombats",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1400",
+      "end": "1450"
+    }
+  },
+  {
+    "name": "years & years",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1520",
+      "end": "1610"
+    }
+  },
+  {
+    "name": "big grams (big boi + phantogram)",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1640",
+      "end": "1740"
+    }
+  },
+  {
+    "name": "air",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1810",
+      "end": "1910"
+    }
+  },
+  {
+    "name": "radiohead",
+    "stage": "Lands End",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1955",
+      "end": "2155"
+    }
+  },
+  {
+    "name": "julien baker",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1200",
+      "end": "1245"
+    }
+  },
+  {
+    "name": "rogue wave",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1315",
+      "end": "1405"
+    }
+  },
+  {
+    "name": "ibeyi",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1435",
+      "end": "1525"
+    }
+  },
+  {
+    "name": "lord huron",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1555",
+      "end": "1645"
+    }
+  },
+  {
+    "name": "the last shadow puppets",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1715",
+      "end": "1805"
+    }
+  },
+  {
+    "name": "sufjan stevens",
+    "stage": "Sutro",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1835",
+      "end": "1945"
+    }
+  },
+  {
+    "name": "fantastic negrito",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1240",
+      "end": "1325"
+    }
+  },
+  {
+    "name": "the knocks",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1405",
+      "end": "1455"
+    }
+  },
+  {
+    "name": "vince staples",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1540",
+      "end": "1630"
+    }
+  },
+  {
+    "name": "jauz",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1715",
+      "end": "1805"
+    }
+  },
+  {
+    "name": "halsey",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1855",
+      "end": "1955"
+    }
+  },
+  {
+    "name": "zedd",
+    "stage": "Twin Peaks",
+    "day": "2016-08-06",
+    "time": {
+      "start": "2040",
+      "end": "2155"
+    }
+  },
+  {
+    "name": "methyl ethel",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1200",
+      "end": "1240"
+    }
+  },
+  {
+    "name": "declan mckenna",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1325",
+      "end": "1405"
+    }
+  },
+  {
+    "name": "kevin morby",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1455",
+      "end": "1535"
+    }
+  },
+  {
+    "name": "con brio",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1630",
+      "end": "1710"
+    }
+  },
+  {
+    "name": "peaches",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1805",
+      "end": "1850"
+    }
+  },
+  {
+    "name": "anderson .paak & the free nationals",
+    "stage": "Panhandle",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1955",
+      "end": "2040"
+    }
+  },
+  {
+    "name": "motion potion",
+    "stage": "The House by Heineken",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1200",
+      "end": "1500"
+    }
+  },
+  {
+    "name": "w.haze",
+    "stage": "The House by Heineken",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1500",
+      "end": "1630"
+    }
+  },
+  {
+    "name": "translucent",
+    "stage": "The House by Heineken",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1630",
+      "end": "1730"
+    }
+  },
+  {
+    "name": "purple disco machine",
+    "stage": "The House by Heineken",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1730",
+      "end": "1830"
+    }
+  },
+  {
+    "name": "victor calderone",
+    "stage": "The House by Heineken",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1830",
+      "end": "2000"
+    }
+  },
+  {
+    "name": "harmontown: dan harmon & jeff b. davis",
+    "stage": "The Barbary",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1250",
+      "end": "1335"
+    }
+  },
+  {
+    "name": "natasha leggero, moshe kasher, john early and jermaine fowler",
+    "stage": "The Barbary",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1405",
+      "end": "1500"
+    }
+  },
+  {
+    "name": "john mulaney & beth stelling",
+    "stage": "The Barbary",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1525",
+      "end": "1615"
+    }
+  },
+  {
+    "name": "anthony jeselnik, kyle kinane and claudia o'doherty",
+    "stage": "The Barbary",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1640",
+      "end": "1735"
+    }
+  },
+  {
+    "name": "the goddamn comedy jam with special guests dana gould, kyle kinane, john early & beth stelling",
+    "stage": "The Barbary",
+    "day": "2016-08-06",
+    "time": {
+      "start": "1815",
+      "end": "1905"
+    }
+  },
+  {
+    "name": "kamasi washington",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1200",
+      "end": "1245"
+    }
+  },
+  {
+    "name": "oh wonder",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1315",
+      "end": "1400"
+    }
+  },
+  {
+    "name": "the muppets’ dr. teeth and the electric mayhem",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1430",
+      "end": "1455"
+    }
+  },
+  {
+    "name": "third eye blind",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1525",
+      "end": "1625"
+    }
+  },
+  {
+    "name": "chance the rapper",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1655",
+      "end": "1755"
+    }
+  },
+  {
+    "name": "major lazer",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1825",
+      "end": "1925"
+    }
+  },
+  {
+    "name": "lionel richie",
+    "stage": "Lands End",
+    "day": "2016-08-07",
+    "time": {
+      "start": "2005",
+      "end": "2135"
+    }
+  },
+  {
+    "name": "frances",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1205",
+      "end": "1250"
+    }
+  },
+  {
+    "name": "the oh hellos",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1320",
+      "end": "1405"
+    }
+  },
+  {
+    "name": "jack garratt",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1435",
+      "end": "1525"
+    }
+  },
+  {
+    "name": "brandi carlile",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1555",
+      "end": "1645"
+    }
+  },
+  {
+    "name": "jason isbell",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1715",
+      "end": "1805"
+    }
+  },
+  {
+    "name": "ryan adams and the shining",
+    "stage": "Sutro",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1835",
+      "end": "1950"
+    }
+  },
+  {
+    "name": "natalia lafourcade",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1240",
+      "end": "1320"
+    }
+  },
+  {
+    "name": "snakehips",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1400",
+      "end": "1445"
+    }
+  },
+  {
+    "name": "griz",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1530",
+      "end": "1620"
+    }
+  },
+  {
+    "name": "kehlani",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1705",
+      "end": "1755"
+    }
+  },
+  {
+    "name": "miguel",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1840",
+      "end": "1940"
+    }
+  },
+  {
+    "name": "lana del rey",
+    "stage": "Twin Peaks",
+    "day": "2016-08-07",
+    "time": {
+      "start": "2025",
+      "end": "2135"
+    }
+  },
+  {
+    "name": "heron oblivion",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1200",
+      "end": "1240"
+    }
+  },
+  {
+    "name": "cloves",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1320",
+      "end": "1400"
+    }
+  },
+  {
+    "name": "hælos",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1445",
+      "end": "1525"
+    }
+  },
+  {
+    "name": "diiv",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1620",
+      "end": "1700"
+    }
+  },
+  {
+    "name": "rüfüs du sol",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1755",
+      "end": "1835"
+    }
+  },
+  {
+    "name": "lettuce",
+    "stage": "Panhandle",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1940",
+      "end": "2030"
+    }
+  },
+  {
+    "name": "grensta",
+    "stage": "The House by Heineken",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1200",
+      "end": "1330"
+    }
+  },
+  {
+    "name": "derek hena",
+    "stage": "The House by Heineken",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1330",
+      "end": "1500"
+    }
+  },
+  {
+    "name": "deckard",
+    "stage": "The House by Heineken",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1500",
+      "end": "1630"
+    }
+  },
+  {
+    "name": "gina turner",
+    "stage": "The House by Heineken",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1630",
+      "end": "1800"
+    }
+  },
+  {
+    "name": "lee k",
+    "stage": "The House by Heineken",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1800",
+      "end": "2000"
+    }
+  },
+  {
+    "name": "jo firestone's friends of single people",
+    "stage": "The Barbary",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1230",
+      "end": "1315"
+    }
+  },
+  {
+    "name": "sasheer zamata & nicole byer",
+    "stage": "The Barbary",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1345",
+      "end": "1430"
+    }
+  },
+  {
+    "name": "spontaneanation with paul f. tompkins feat. eban schletter and guests: craig cackowski, tawny newsome, janet varney",
+    "stage": "The Barbary",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1525",
+      "end": "1615"
+    }
+  },
+  {
+    "name": "fred armisen & friends feat. bob mould & charlyne yi",
+    "stage": "The Barbary",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1645",
+      "end": "1735"
+    }
+  },
+  {
+    "name": "jash presents pound house live hosted by brent weinbach & dj douggpound with esther povitsky & johnny pemberton and special guest natasha leggero",
+    "stage": "The Barbary",
+    "day": "2016-08-07",
+    "time": {
+      "start": "1805",
+      "end": "1855"
+    }
+  }
+]

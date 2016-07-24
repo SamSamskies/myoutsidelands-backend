@@ -1,6 +1,9 @@
 const Promise = require('bluebird');
 const _ = require('underscore');
 const SpotifyWebApi = require('spotify-web-api-node');
+
+const schedule = require('../schedule.json');
+
 const express = require('express');
 const router = express.Router();
 
@@ -36,13 +39,8 @@ router.get('/auth-callback', function(req, res, next) {
         recommendedArtists: getRecommendedArtists(spotifyApi, topTenArtistIds)
       });
     })
-    .then(({ likedArtists, recommendedArtists }) => {
-      return {
-        likedArtists,
-        recommendedArtists: _.reject(recommendedArtists, (artist) => likedArtists.includes(artist))
-      }
-    })
-    .then((payload) => res.json(payload))
+    .then(({ likedArtists, recommendedArtists }) => addTagsToSchedule(likedArtists, recommendedArtists))
+    .then((payload) => res.json(_.reject(payload, (timeSlot) => timeSlot.tag === null)))
     .catch((err) => res.json(err))
 });
 
@@ -78,6 +76,25 @@ function getRecommendedArtists(spotifyApi, topTenArtistIds) {
 function getRelatedArtists(spotifyApi, id) {
   return spotifyApi.getArtistRelatedArtists(id)
     .then((data) => _.pluck(data.body.artists, 'name').map((name) => name.toLowerCase()));
+}
+
+function addTagsToSchedule(likedArtists, recommendedArtists) {
+  return schedule.map((timeSlotRecord) => {
+      const tag = getTagForArtist(timeSlotRecord.name, likedArtists, recommendedArtists);
+      return Object.assign({ tag }, timeSlotRecord);
+    });
+}
+
+function getTagForArtist(artistName, likedArtists, recommendedArtists) {
+  if (likedArtists.includes(artistName)) {
+    return 'liked';
+  }
+
+  if (recommendedArtists.includes(artistName)) {
+    return 'recommended';
+  }
+
+  return null;
 }
 
 module.exports = router;
