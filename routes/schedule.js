@@ -1,3 +1,4 @@
+const NodeCache = require('node-cache');
 const Promise = require('bluebird');
 const _ = require('underscore');
 const SpotifyWebApi = require('spotify-web-api-node');
@@ -6,6 +7,7 @@ const schedule = require('../schedule.json');
 
 const express = require('express');
 const router = express.Router();
+const cache = new NodeCache({ stdTTL: 600 });
 
 const scopes = [
   'user-top-read',
@@ -32,17 +34,39 @@ router.get('/auth-callback', function(req, res, next) {
 
   spotifyApi.authorizationCodeGrant(req.query.code)
     .then((data) => spotifyApi.setAccessToken(data.body.access_token))
-    .then(() => getLikedArtists(spotifyApi))
-    .then(({ names, topTenArtistIds }) => {
+    .then(() => getEmail(spotifyApi))
+    .then((email) => {
+      const cachedSchedule = cache.get(email);
+
+      if (cachedSchedule) {
+        res.json(_.reject(cachedSchedule, (timeSlot) => timeSlot.tag === null));
+      } else {
+        createNewSchedule(spotifyApi, email)
+          .then((scheduleWithTags) => {
+            cache.set(email, scheduleWithTags);
+            return scheduleWithTags;
+          })
+          .then((scheduleWithTags) => res.json(_.reject(scheduleWithTags, (timeSlot) => timeSlot.tag === null)))
+      }
+    })
+    .catch((err) => res.json(err))
+});
+
+function createNewSchedule(spotifyApi) {
+  return getLikedArtists(spotifyApi)
+    .then(({ names, topArtistIds }) => {
       return Promise.props({
         likedArtists: names,
-        recommendedArtists: getRecommendedArtists(spotifyApi, topTenArtistIds)
+        recommendedArtists: getRecommendedArtists(spotifyApi, topArtistIds)
       });
     })
     .then(({ likedArtists, recommendedArtists }) => addTagsToSchedule(likedArtists, recommendedArtists))
-    .then((payload) => res.json(_.reject(payload, (timeSlot) => timeSlot.tag === null)))
-    .catch((err) => res.json(err))
-});
+}
+
+function getEmail(spotifyApi) {
+  return spotifyApi.getMe()
+    .then((data) => data.body.email);
+}
 
 function getTopArtists(spotifyApi) {
   return spotifyApi.getMyTopArtists({ limit: 50 })
@@ -59,17 +83,17 @@ function getLikedArtists(spotifyApi) {
     .spread((topArtists, followedArtists) => {
       const topArtistNames = _.pluck(topArtists, 'name').map((name) => name.toLowerCase());
       const followedArtistNames = _.pluck(followedArtists, 'name').map((name) => name.toLowerCase());
-      const topTenArtistIds = _.pluck(_.first(topArtists, 10), 'id');
+      const topArtistIds = _.pluck(_.first(topArtists, 40), 'id');
 
       return {
         names: _.uniq(topArtistNames.concat(followedArtistNames)),
-        topTenArtistIds
+        topArtistIds
       };
     });
 }
 
-function getRecommendedArtists(spotifyApi, topTenArtistIds) {
-  return Promise.map(topTenArtistIds, (id) => getRelatedArtists(spotifyApi, id))
+function getRecommendedArtists(spotifyApi, topArtistIds) {
+  return Promise.map(topArtistIds, (id) => getRelatedArtists(spotifyApi, id))
     .then((arrayOfRelatedArtists) => _.uniq(_.flatten(arrayOfRelatedArtists)));
 }
 
@@ -86,11 +110,11 @@ function addTagsToSchedule(likedArtists, recommendedArtists) {
 }
 
 function getTagForArtist(artistName, likedArtists, recommendedArtists) {
-  if (likedArtists.includes(artistName)) {
+  if (likedArtists.find((likedArtistName) => new RegExp(artistName).test(likedArtistName))) {
     return 'liked';
   }
 
-  if (recommendedArtists.includes(artistName)) {
+  if (recommendedArtists.find((recommendedArtistName) => new RegExp(artistName).test(recommendedArtistName))) {
     return 'recommended';
   }
 
