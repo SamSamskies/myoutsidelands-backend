@@ -9,22 +9,6 @@ const express = require('express');
 const router = express.Router();
 const cache = new NodeCache({ stdTTL: 600 });
 
-const scopes = [
-  'user-top-read',
-  'user-read-email',
-  'user-follow-read'
-];
-
-router.get('/', function(req, res, next) {
-  const spotifyApi = new SpotifyWebApi({
-    clientId: process.env.SPOTIFY_CLIENT_ID,
-    redirectUri: process.env.SPOTIFY_AUTH_CALLBACK
-  });
-  const authorizeUrl = spotifyApi.createAuthorizeURL(scopes)
-
-  res.redirect(authorizeUrl);
-});
-
 router.get('/auth-callback', function(req, res, next) {
   const spotifyApi = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_CLIENT_ID,
