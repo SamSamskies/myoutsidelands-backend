@@ -9,7 +9,11 @@ const express = require('express');
 const router = express.Router();
 const cache = new NodeCache({ stdTTL: 600 });
 
-router.get('/auth-callback', function(req, res, next) {
+router.get('/', function(req, res) {
+  res.json(cache.get(req.query.email));
+});
+
+router.get('/auth-callback', function(req, res) {
   const spotifyApi = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_CLIENT_ID,
     clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
