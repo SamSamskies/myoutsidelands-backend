@@ -20,20 +20,19 @@ router.get('/auth-callback', function(req, res, next) {
     .then((data) => spotifyApi.setAccessToken(data.body.access_token))
     .then(() => getEmail(spotifyApi))
     .then((email) => {
+      const url = `http://schedule.myoutsidelands.com?email=${email}`;
       const cachedSchedule = cache.get(email);
 
       if (cachedSchedule) {
-        res.json(cachedSchedule);
+        res.redirect(url);
       } else {
         createNewSchedule(spotifyApi, email)
           .then((scheduleWithTags) => {
             cache.set(email, scheduleWithTags);
-            return scheduleWithTags;
-          })
-          .then((scheduleWithTags) => res.json(scheduleWithTags));
+            res.redirect(url);
+          });
       }
     })
-    .catch((err) => res.json(err))
 });
 
 function createNewSchedule(spotifyApi) {
