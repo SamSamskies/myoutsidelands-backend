@@ -97,11 +97,11 @@ function addTagsToSchedule(likedArtists, recommendedArtists) {
 }
 
 function getTagForArtist(artistName, likedArtists, recommendedArtists) {
-  if (likedArtists.find((likedArtistName) => new RegExp(likedArtistName).test(artistName))) {
+  if (likedArtists.find((likedArtistName) => new RegExp(artistName).test(likedArtistName))) {
     return 'liked';
   }
 
-  if (recommendedArtists.find((recommendedArtistName) => new RegExp(recommendedArtistName).test(artistName))) {
+  if (recommendedArtists.find((recommendedArtistName) => new RegExp(artistName).test(recommendedArtistName))) {
     return 'recommended';
   }
 
